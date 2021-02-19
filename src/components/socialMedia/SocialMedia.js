@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.css";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -44,29 +44,23 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.gitlab ? (
+
+      {socialMediaLinks.yahoo ? (
         <a
-          href={socialMediaLinks.gitlab}
-          className="icon-button gitlab"
+          href={`mailto:${socialMediaLinks.yahoo}`}
+          className="icon-button yahoo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-gitlab"></i>
+          <i class="fab fa-yahoo"></i>
           <span></span>
         </a>
       ) : null}
 
-      {socialMediaLinks.facebook ? (
-        <a
-          href={socialMediaLinks.facebook}
-          className="icon-button facebook"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-facebook-f"></i>
-          <span></span>
-        </a>
-      ) : null}
+
+
+
+
 
       {socialMediaLinks.instagram ? (
         <a
@@ -80,29 +74,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.twitter ? (
-        <a
-          href={socialMediaLinks.twitter}
-          className="icon-button twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-twitter"></i>
-          <span></span>
-        </a>
-      ) : null}
 
-      {socialMediaLinks.medium ? (
-        <a
-          href={socialMediaLinks.medium}
-          className="icon-button medium"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-medium"></i>
-          <span></span>
-        </a>
-      ) : null}
 
       {socialMediaLinks.stackoverflow ? (
         <a
